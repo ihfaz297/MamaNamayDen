@@ -1,0 +1,36 @@
+// data/routesData.ts
+export interface RouteItem {
+  id: string;
+  name: string;
+  stops: string[];
+  firstBus: string;
+  lastBus: string;
+  freqMins: number;
+}
+
+export const routes: RouteItem[] = [
+  {
+    id: "SUST-01",
+    name: "SUST ⇄ Madina Market",
+    stops: ["SUST Main Gate", "Akhalia", "Sobhanighat", "Chowhatta", "Madina Market"],
+    firstBus: "07:00",
+    lastBus: "21:30",
+    freqMins: 10,
+  },
+  {
+    id: "SUST-02",
+    name: "SUST ⇄ Ambarkhana",
+    stops: ["SUST Main Gate", "Akhalia", "Ambarkhana"],
+    firstBus: "07:15",
+    lastBus: "21:45",
+    freqMins: 12,
+  },
+  {
+    id: "SUST-03",
+    name: "SUST ⇄ Zindabazar",
+    stops: ["SUST Main Gate", "Chowhatta", "Bondor", "Zindabazar"],
+    firstBus: "07:30",
+    lastBus: "22:00",
+    freqMins: 15,
+  },
+];
